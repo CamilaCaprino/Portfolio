@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 import {
-  ArrowDown, ArrowUpRight, BriefcaseBusiness, Check, Code2, Download,
-  Languages, Mail, Moon, Phone, Sparkles, Sun, UserRound,
+  ArrowDown, ArrowUpRight, BriefcaseBusiness, Check, Download,
+  Languages, Mail, Moon, Phone, Sparkles, Sun,
 } from "lucide-react";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 type Language = "es" | "en";
 
@@ -66,14 +67,14 @@ const content = {
     learningBody: "Me encuentro en capacitación constante para ampliar día a día mis habilidades profesionales. Actualmente, mi foco está en profundizar el uso de la inteligencia artificial aplicada al análisis, la automatización y la creación de soluciones digitales más eficientes.",
     languagesTitle: "Idiomas", languages: "Español nativo · Inglés intermedio · Nivel 6 en curso en la Universidad Nacional del Oeste",
     cvKicker: "CV", cvTitle: "Mi experiencia, en una sola versión.",
-    cvSubtitle: "Un CV consolidado que reúne desarrollo, análisis funcional, producto y gestión de proyectos.",
+    cvSubtitle: "No dudes en contactarte si estas en busqueda de alguien que aporte valor.",
     cvs: [
       ["CV profesional completo", "Experiencia, formación, habilidades técnicas y fortalezas profesionales.", "/cv/Camila-Caprino-CV.pdf"],
     ],
     download: "Descargar PDF",
     closing: "¿Construimos algo que simplifique lo complejo?",
     closingBody: "Estoy abierta a oportunidades donde pueda conectar producto, procesos y tecnología para generar impacto real.",
-    email: "Escribime", footer: "Diseñado y desarrollado con intención.",
+    email: "Escribime", footer: "Camila Caprino.",
   },
   en: {
     nav: [["Profile", "#perfil"], ["Experience", "#experiencia"], ["Skills", "#habilidades"], ["Education", "#formacion"]],
@@ -216,9 +217,33 @@ export default function Home() {
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 to-transparent p-7 pt-24 text-white">
                 <p className="text-sm font-medium">Buenos Aires, Argentina</p>
                 <div className="mt-4 flex gap-2">
-                  <a className="social-button" href="https://www.linkedin.com/in/camilacaprino" target="_blank" rel="noreferrer" aria-label="LinkedIn"><UserRound size={18} /></a>
-                  <a className="social-button" href="https://github.com/CamilaCaprino" target="_blank" rel="noreferrer" aria-label="GitHub"><Code2 size={18} /></a>
-                  <a className="social-button" href="mailto:camicaprino@gmail.com" aria-label="Email"><Mail size={18} /></a>
+                  <a
+                    className="social-button"
+                    href="https://www.linkedin.com/in/camilacaprino"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <FaLinkedinIn size={18} />
+                  </a>
+
+                  <a
+                    className="social-button"
+                    href="https://github.com/CamilaCaprino"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <FaGithub size={18} />
+                  </a>
+
+                  <a
+                    className="social-button"
+                    href="mailto:camicaprino@gmail.com"
+                    aria-label="Email"
+                  >
+                    <Mail size={18} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -343,7 +368,7 @@ export default function Home() {
       </section>
 
       <footer className="mx-auto flex max-w-[1440px] flex-col gap-3 px-5 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-8 lg:px-12">
-        <p>© {new Date().getFullYear()} Camila Caprino</p><p>{t.footer}</p>
+        <p>© {new Date().getFullYear()} CC</p><p>{t.footer}</p>
       </footer>
     </main>
   );
