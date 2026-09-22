@@ -1,0 +1,23 @@
+# dependencies
+/node_modules
+
+# Next.js output
+/.next
+/out
+
+# local files
+.DS_Store
+*.pem
+.env*
+
+# Vercel
+.vercel
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
