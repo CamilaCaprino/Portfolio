@@ -65,7 +65,7 @@ const content = {
     ],
     learningTitle: "Aprendizaje continuo",
     learningBody: "Me encuentro en capacitación constante para ampliar día a día mis habilidades profesionales. Actualmente, mi foco está en profundizar el uso de la inteligencia artificial aplicada al análisis, la automatización y la creación de soluciones digitales más eficientes.",
-    languagesTitle: "Idiomas", languages: "Español nativo · Inglés intermedio · Nivel 6 en curso en la Universidad Nacional del Oeste",
+    languagesTitle: "Idiomas", languages: "Español nativo · Inglés pre-intermedio (A2 CEFR) · Nivel 6 en curso en la Universidad Nacional del Oeste",
     cvKicker: "CV", cvTitle: "Mi experiencia, en una sola versión.",
     cvSubtitle: "No dudes en contactarte si estas en busqueda de alguien que aporte valor.",
     cvs: [
